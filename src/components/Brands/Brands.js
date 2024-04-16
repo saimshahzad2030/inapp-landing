@@ -3,11 +3,11 @@ import style from "./Brands.module.css";
 import { brands } from "../../../utils/images";
 const Brands = () => {
   return (
-    <div className={`relative flex flex-col  lg:flex-row w-full h-auto`}>
+    <div className={`relative flex flex-col  lg:flex-row w-full h-auto mt-20`}>
       <div
-        className={`  w-full lg:w-2/3 xl:w-3/5 h-auto z-10 flex flex-col items-start ${style.brandsDiv} pt-16 pl-6 sm:px-6 pb-16 mb-28`}
+        className={`  w-full lg:w-2/3 xl:w-3/5 h-auto z-10 flex flex-col items-start ${style.brandsDiv} pt-16 pl-6 sm:px-6 pb-16 mb-4 sm:mb-28`}
       >
-        <div className={`flex flex-row items-center w-full ml-6`}>
+        <div className={`flex flex-row items-center w-full sm:ml-6`}>
           <div className={`${style.line} mr-4 `}></div>
           <span className={`${style.span1} text-xl text-white`}>BRANDS</span>
         </div>
@@ -104,7 +104,7 @@ const Brands = () => {
         </div>
       </div>
       <div
-        className={` lg:absolute z-0 right-0 bottom-0 w-full lg:w-3/5 h-full pt-40  flex flex-col `}
+        className={` lg:absolute z-0 right-0 bottom-0 w-full lg:w-3/5 h-full sm:pt-40  flex flex-col `}
       >
         <img
           src={brands.inapp}
