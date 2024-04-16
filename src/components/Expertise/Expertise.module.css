@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+}
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: #1d78be;
+}
+.span1 {
+  font-family: "Crimson Text", serif;
+}
+.cardHeading {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.cardText {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: justify;
+}
+.rightChildChild {
+  width: 80%;
+}
+@media screen and (max-width: 1450px) {
+  .rightChildChild {
+    width: 100%;
+  }
+}
+
+/* .leftChild {
+  width: 30%;
+}
+
+.rightChild {
+  width: 100%;
+} */
