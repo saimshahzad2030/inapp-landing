@@ -12,12 +12,12 @@ const Brands = () => {
           <span className={`${style.span1} text-xl text-white`}>BRANDS</span>
         </div>
         <h2 className={`text-3xl text-white font-bold mt-6`}>
-          Brands we've worked with
+          Brands weve worked with
         </h2>
         <p className={`text-xl text-white mt-12 pr-24`}>
           Our customer centric approach has encouraged teaming up with our
-          clients to create world class marques; this has made us one of the
-          best brands to work with.
+          clients to create world class marques this has made us one of the best
+          brands to work with.
         </p>
         <div
           className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 w-full mt-16 gap-4 gap-y-20 `}

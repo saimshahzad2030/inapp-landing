@@ -76,8 +76,8 @@ const Expertise = () => {
               </div>
               <p className={`mt-4 text-sm ${style.cardText}`}>
                 We would love to engage with our clients as a solid partner not
-                only to outline their product's end-to-end vision, but to
-                enhance their technology, and business strategy as well.
+                only to outline their products end-to-end vision, but to enhance
+                their technology, and business strategy as well.
               </p>
             </div>
           </div>
