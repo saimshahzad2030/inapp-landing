@@ -15,7 +15,7 @@ const Footer = () => {
       <img
         src={`/Assets/logo/logo.png`}
         alt="logo"
-        className={`w-auto h-48 `}
+        className={`w-auto xl:h-36 lg:h-24 2xl:h-48 `}
       />
       <div className="flex flex-col items-start">
         <h2 className="font-bold text-2xl mb-4">Headquarters</h2>
@@ -24,8 +24,10 @@ const Footer = () => {
         <p>P-E-C-H-S,</p>
         <p>Karachi, Pakistan</p>
       </div>
-      <div className="flex flex-col items-start mr-56">
-        <h2 className="font-bold text-5xl mb-4">Ready to start a project?</h2>
+      <div className="flex flex-col items-start 2xl:mr-56 ">
+        <h2 className="font-bold lg:text-4xl 2xl:text-5xl mb-4">
+          Ready to start a project?
+        </h2>
         <div className="w-3/5">
           <p className=" ">
             Lets build something awesome together! hello@inappsolutions.com or
