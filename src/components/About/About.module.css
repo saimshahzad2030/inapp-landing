@@ -1,0 +1,15 @@
+.box1 {
+  background-color: #20275c;
+}
+
+.box2 {
+  background-color: #1d78be;
+}
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: #1d78be;
+}
+.rightChild {
+  height: 100%;
+}
