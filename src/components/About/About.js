@@ -25,7 +25,7 @@ const About = () => {
             <p className={`text-md mt-12 text-justify`}>
               Great brands are created to tell a story that never stops
               unfolding, our aim is not only to develop and designs, we want to
-              give our client's an experience, an impression, a promise, an
+              give our clients an experience, an impression, a promise, an
               outstanding symbol that will always connect and remain relevant
             </p>
             <div className={`flex flex-row items-center w-full mt-8 ml-6`}>

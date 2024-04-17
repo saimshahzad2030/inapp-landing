@@ -28,7 +28,7 @@ const Footer = () => {
         <h2 className="font-bold text-5xl mb-4">Ready to start a project?</h2>
         <div className="w-3/5">
           <p className=" ">
-            Let's build something awesome together! hello@inappsolutions.com or
+            Lets build something awesome together! hello@inappsolutions.com or
             call+92 312 2999338
           </p>
         </div>

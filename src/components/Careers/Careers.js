@@ -26,7 +26,7 @@ const Careers = () => {
           Attach with us.
         </h2>
         <p className={`mt-2 lg:text-xl text-xl`}>
-          There's always room for game-changers at InApp arena
+          Theres always room for game-changers at InApp arena
         </p>
         <div className={`flex flex-row items-center w-full ml-6  mt-6`}>
           <div className={`${style.line}  mr-4 `}></div>
