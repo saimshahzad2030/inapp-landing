@@ -33,7 +33,7 @@ const Expertise = () => {
         <div className={`flex flex-row ${style.rightChildChild}`}>
           <div className="grid grid-cols-1 sm:grid-cols-3">
             <div
-              className={` py-12  flex flex-col items-center sm:items-start px-4`}
+              className={`py-4 sm:py-12  flex flex-col items-center sm:items-start px-4`}
             >
               <div className="flex flex-col items-center sm:items-start h-48">
                 <img src={expertise.digitalWorkplace} alt="digital workplace" />
@@ -51,7 +51,7 @@ const Expertise = () => {
               </p>
             </div>
             <div
-              className={` py-12  flex flex-col items-center sm:items-start px-4`}
+              className={`py-4 sm:py-12  flex flex-col items-center sm:items-start px-4`}
             >
               <div className="flex flex-col  items-center sm:items-start  h-48">
                 <img
@@ -72,7 +72,7 @@ const Expertise = () => {
               </p>
             </div>
             <div
-              className={` py-12  flex flex-col items-center sm:items-start px-4`}
+              className={` py-4 sm:py-12   flex flex-col items-center sm:items-start px-4`}
             >
               <div className="flex flex-col  items-center sm:items-start  h-48">
                 <img src={expertise.productStrategy} alt="product strategy" />
