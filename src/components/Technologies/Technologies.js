@@ -52,7 +52,7 @@ const Technologies = () => {
   ];
   return (
     <div className="flex flex-col items-center mt-20">
-      <h1 className={`text-3xl font-bold my-8`}>
+      <h1 className={`text-3xl font-bold my-8 text-center`}>
         Technologies we have worked with
       </h1>
       <div className=" w-full md:w-2/3 flex flex-col items-center ">
