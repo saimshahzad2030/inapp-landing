@@ -59,3 +59,13 @@ export const footer = {
   linkedin: "/Assets/footer/linkedin-161-svgrepo-com.svg",
   instagram: "/Assets/footer/instagram-svgrepo-com.svg",
 };
+
+export const projects = {
+  project1: "/Assets/projects/Thumbnail-01.jpg",
+  project2: "/Assets/projects/Thumbnail-02.jpg",
+  project3: "/Assets/projects/Thumbnail-03.jpg",
+  project4: "/Assets/projects/Thumbnail-04.jpg",
+  project5: "/Assets/projects/Thumbnail-05.jpg",
+  project6: "/Assets/projects/Thumbnail-06.jpg",
+  project7: "/Assets/projects/Thumbnail-07.jpg",
+};

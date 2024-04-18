@@ -1,0 +1,43 @@
+.line {
+  width: 60px;
+  height: 4px;
+  background-color: #1d78be;
+}
+.bg {
+  background-color: #1d78be;
+}
+.rectangularDiv {
+  overflow: hidden; /* Hide any overflow outside the rectangle */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Define hover effect */
+.rectangularImage:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+.rectangularImage {
+  width: 100%; /* Make the image fill the entire container */
+  height: 100%; /* Make the image fill the entire container */
+  object-fit: cover; /* Cover the rectangular area */
+
+  transition: transform 0.5s ease; /* Add a smooth transition */
+}
+.moveToTopDiv {
+  background-color: #1d78be;
+}
+
+.pagination {
+  background-color: #20275c;
+}
+.imageCurtain {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.curtain {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 640px) {
+  .curtain {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

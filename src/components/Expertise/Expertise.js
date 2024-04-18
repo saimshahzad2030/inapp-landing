@@ -11,7 +11,9 @@ const Expertise = () => {
           <div className={`${style.line} mr-4 `}></div>
           <span className={`${style.span1} text-xl`}>WHAT WE DO</span>
         </div>
-        <h1 className={`text-3xl md:text-2xl font-bold text-black mt-5`}>
+        <h1
+          className={`text-3xl md:text-3xl lg:pr-8 font-bold text-black mt-5`}
+        >
           Captivating and Interactive visuals.
         </h1>
         <p className={`text-smd mt-12`}>
@@ -35,7 +37,9 @@ const Expertise = () => {
             >
               <div className="flex flex-col items-center sm:items-start h-48">
                 <img src={expertise.digitalWorkplace} alt="digital workplace" />
-                <h3 className={`text-2xl font-bold ${style.cardHeading}`}>
+                <h3
+                  className={`text-2xl font-bold text-blue-950 ${style.cardHeading}`}
+                >
                   Digital Workplace
                 </h3>
               </div>
@@ -54,7 +58,9 @@ const Expertise = () => {
                   src={expertise.applicationDevelopment}
                   alt="aplication development"
                 />
-                <h3 className={`text-2xl font-bold ${style.cardHeading}`}>
+                <h3
+                  className={`text-2xl font-bold text-blue-950 ${style.cardHeading}`}
+                >
                   Application Development
                 </h3>
               </div>
@@ -70,7 +76,9 @@ const Expertise = () => {
             >
               <div className="flex flex-col  items-center sm:items-start  h-48">
                 <img src={expertise.productStrategy} alt="product strategy" />
-                <h3 className={`text-2xl font-bold ${style.cardHeading}`}>
+                <h3
+                  className={`text-2xl font-bold text-blue-950 ${style.cardHeading}`}
+                >
                   Product Strategy
                 </h3>
               </div>

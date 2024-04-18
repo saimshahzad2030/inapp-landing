@@ -13,3 +13,7 @@
 .rightChild {
   height: 100%;
 }
+
+.modalOpen {
+  overflow: hidden;
+}

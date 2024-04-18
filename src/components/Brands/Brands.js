@@ -5,7 +5,7 @@ const Brands = () => {
   return (
     <div className={`relative flex flex-col  lg:flex-row w-full h-auto mt-20`}>
       <div
-        className={`  w-full lg:w-2/3 xl:w-3/5 h-auto z-10 flex flex-col items-start ${style.brandsDiv} pt-16 pl-6 sm:px-6 pb-16 mb-4 sm:mb-28`}
+        className={`  w-full lg:w-1/2 xl:w-1/2 h-auto z-10 flex flex-col items-start ${style.brandsDiv} pt-16 pl-6 sm:px-6 pb-16 mb-4 lg:mb-28`}
       >
         <div className={`flex flex-row items-center w-full sm:ml-6`}>
           <div className={`${style.line} mr-4 `}></div>
@@ -104,7 +104,7 @@ const Brands = () => {
         </div>
       </div>
       <div
-        className={` lg:absolute z-0 right-0 bottom-0 w-full lg:w-3/5 h-full sm:pt-40  flex flex-col `}
+        className={` lg:absolute z-0 right-0 bottom-0 w-full lg:w-1/2 h-full lg:pt-40  flex flex-col `}
       >
         <img
           src={brands.inapp}
