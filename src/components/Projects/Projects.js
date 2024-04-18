@@ -72,6 +72,7 @@ const Projects = () => {
           <Slider ref={sliderRef} {...settings}>
             {images.map((image, index) => (
               <img
+                key={index}
                 src={image}
                 alt={image}
                 className={`${style.rectangularImage} `}
