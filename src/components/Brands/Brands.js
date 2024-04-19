@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Brands.module.css";
-import { brands } from "../../../utils/images";
+import { brands, inappBg } from "../../../constants/homepage";
 import BrandsImage from "./BrandsImage";
 import InAppLogo from "./InAppLogo";
 const Brands = ({ isVisible }) => {
@@ -39,66 +39,17 @@ const Brands = ({ isVisible }) => {
             isVisible ? style.fadeInUp : ""
           }`}
         >
-          <BrandsImage
-            imageSrc={brands.diagame}
-            projectName={`diagame`}
-            classname={`w-20 sm:w-24 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.cooperswitch}
-            projectName={`cooperswitch`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.audiograb}
-            projectName={`audiograb`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.sasco}
-            projectName={`sasco`}
-            classname={`w-16 sm:w-20 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.entice}
-            projectName={`entice`}
-            classname={`w-20 sm:w-30 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.discoverblockchain}
-            projectName={`discoverblockchain`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.zombie}
-            projectName={`zombie`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.handoff}
-            projectName={`handoff`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
-
-          <BrandsImage
-            imageSrc={brands.sortwaste}
-            projectName={`sortwaste`}
-            classname={`w-16 sm:w-20 h-auto`}
-          />
-
-          <BrandsImage
-            imageSrc={brands.pushup}
-            projectName={`pushup`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
-          <BrandsImage
-            imageSrc={brands.jackwarm}
-            projectName={`jackwarm`}
-            classname={`w-20 sm:w-40 h-auto`}
-          />
+          {brands.map((brand, index) => (
+            <BrandsImage
+              imageSrc={brand.img}
+              projectName={brand.name}
+              classname={brand.classname}
+              key={index}
+            />
+          ))}
         </div>
       </div>
-      <InAppLogo imgSrc={brands.inapp} />
+      <InAppLogo imgSrc={inappBg} />
     </div>
   );
 };

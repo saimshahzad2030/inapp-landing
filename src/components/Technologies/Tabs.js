@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./Technologies.module.css";
 const Tabs = ({ tabs, activeTab, handleTabClick, setActiveIndex }) => {
   return (
     <div className="grid sm:grid-cols-7 grid-cols-8 ">

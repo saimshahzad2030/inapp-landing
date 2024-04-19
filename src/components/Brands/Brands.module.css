@@ -9,20 +9,19 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20%); /* Move element 20px down */
+    transform: translateY(20%);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Move element to its original position */
+    transform: translateY(0);
   }
 }
 
-/* Apply the fadeInUp animation to elements with the fadeInUp class */
 .fadeInUp {
   animation-name: fadeInUp;
-  animation-duration: 1s; /* Duration of the animation */
-  animation-timing-function: ease-in-out; /* Animation timing function */
-  animation-fill-mode: both; /* Apply animation styles before and after the animation */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 @keyframes fadeInDown {
   from {
@@ -37,7 +36,7 @@
 
 .fadeInDown {
   animation-name: fadeInDown;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }

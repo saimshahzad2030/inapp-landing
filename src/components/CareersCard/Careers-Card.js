@@ -11,10 +11,12 @@ const CareersCard = ({ text, isVisible }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`flex flex-row items-center justify-between w-full my-2 lg:my-4`}
+        className={`flex flex-row items-center justify-between w-full my-1 lg:my-2`}
       >
         <h1
-          className={`text-3xl lg:text-2xl ${isVisible ? style.fadeInUp : ""}`}
+          className={`text-lg  sm:text-2xl lg:text-2xl font-bold ${
+            isVisible ? style.fadeInUp : ""
+          }`}
         >
           {text}
         </h1>

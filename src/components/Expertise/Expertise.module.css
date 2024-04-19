@@ -8,12 +8,10 @@
   }
 }
 .line {
-  width: 60px;
-  height: 4px;
   background-color: #1d78be;
 }
 .span1 {
-  font-family: "Crimson Text", serif;
+  font-family: "Raleway", sans-serif;
 }
 .cardHeading {
   font-family: "Noto Sans JP", sans-serif;
@@ -31,28 +29,70 @@
   }
 }
 
-/* .leftChild {
-  width: 30%;
-}
-
-.rightChild {
-  width: 100%;
-} */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20%); /* Move element 20px down */
+    transform: translateY(20%);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Move element to its original position */
+    transform: translateY(0);
   }
 }
 
-/* Apply the fadeInUp animation to elements with the fadeInUp class */
 .fadeInUp {
   animation-name: fadeInUp;
-  animation-duration: 1s; /* Duration of the animation */
-  animation-timing-function: ease-in-out; /* Animation timing function */
-  animation-fill-mode: both; /* Apply animation styles before and after the animation */
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes expandAnimation {
+  0% {
+    width: 60px;
+    transform: translateX(0);
+  }
+  100% {
+    width: 90px;
+    transform: translateX(10px);
+  }
+}
+
+.lineExpand {
+  transition: transform 0.3s ease;
+  animation: expandAnimation 1s ease forwards;
+}
+
+@keyframes compressAnimation {
+  0% {
+    width: 90px;
+    transform: translateX(10px);
+  }
+  100% {
+    width: 60px;
+    transform: translateX(0);
+  }
+}
+
+.lineCompress {
+  transition: transform 0.3s ease;
+  animation: compressAnimation 1s ease forwards;
+}
+
+.heading {
+  font-family: "Inter", sans-serif;
+}
+
+.leftChild {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

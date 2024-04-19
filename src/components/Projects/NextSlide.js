@@ -3,7 +3,7 @@ import style from "./Projects.module.css";
 const NextSlide = ({ images, currentSlide, projectsname, handleNextClick }) => {
   return (
     <div
-      className={`hidden absolute bottom-[100px] lg:top-[600px] right-0 sm:flex flex-row w-56 z-50  ${style.bg}  h-[150px] `}
+      className={`hidden absolute bottom-[100px] lg:top-[600px] right-0 sm:flex flex-row w-56 z-50  ${style.bg}  h-[150px] ${style.fadeinRight}`}
     >
       <div className={`w-40 bg-white`}>
         <img

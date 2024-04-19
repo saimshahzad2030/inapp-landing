@@ -6,8 +6,6 @@
   background-color: #1d78be;
 }
 .line {
-  width: 60px;
-  height: 4px;
   background-color: #1d78be;
 }
 .rightChild {
@@ -35,13 +33,13 @@
   }
 }
 .box1 {
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 .box2 {
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   opacity: 0;
@@ -54,4 +52,38 @@
 .animationbox2 {
   animation-name: diagonal-move2;
   opacity: 1;
+}
+
+@keyframes expandAnimation {
+  0% {
+    width: 60px;
+    transform: translateX(0);
+  }
+  100% {
+    width: 90px;
+    transform: translateX(10px);
+  }
+}
+
+@keyframes compressAnimation {
+  0% {
+    width: 90px;
+    transform: translateX(10px);
+  }
+  100% {
+    width: 60px;
+    transform: translateX(0);
+  }
+}
+.lineExpand {
+  transition: transform 0.3s ease;
+  animation: expandAnimation 1s ease forwards;
+}
+
+.lineCompress {
+  transition: transform 0.3s ease;
+  animation: compressAnimation 1s ease forwards;
+}
+.span1 {
+  font-family: "Raleway", sans-serif;
 }

@@ -11,23 +11,23 @@ const TabImages = ({ tabs, activeIndex, isVisible }) => {
   return (
     <div
       key={animationKey}
-      className={`mx-auto mt-10 grid max-w-lg grid-cols-6 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 ${
+      className={`mx-auto mt-10 grid w-full grid-cols-6 items-center gap-x-8 gap-y-10 sm:max-w-3xl sm:grid-cols-6 sm:gap-x-10 ${
         isVisible ? style.imageAnimations : ""
       }`}
     >
       {tabs[activeIndex].images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt="image"
-          className={`${
+        <div
+          className={`flex flex-col items-center ${
             tabs[activeIndex].images.length !== 2 && index < 3
-              ? "col-span-2 max-h-20 w-full object-contain"
+              ? "col-span-2 max-h-12 w-full object-contain"
               : index === 3 || index === 0
-              ? "col-span-2 max-h-20 w-full object-contain col-start-2"
-              : "col-span-2 max-h-20 w-full object-contain col-start-auto"
+              ? "col-span-2 max-h-12 w-full object-contain col-start-2"
+              : "col-span-2 max-h-12 w-full object-contain col-start-auto"
           }`}
-        />
+        >
+          <img key={index} src={image.url} alt="image" className="w-12 h-12" />
+          <p className={`text-center text-sm mt-4 font-bold`}>{image.name}</p>
+        </div>
       ))}
     </div>
   );

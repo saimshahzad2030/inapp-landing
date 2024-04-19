@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Navbar.module.css";
-import { navbar } from "../../../utils/images";
+import { logoGif } from "../../../constants/homepage";
 const Navbar = () => {
   return (
     <div className="relative">
       <nav className="fixed w-full   border-gray-200  dark:border-gray-700 flex flex-row items-start justify-between z-50">
         <img
-          src={navbar.logo}
+          src={logoGif}
           alt="inapp Logo"
           className="h-16 mx-0 cursor-pointer"
         />

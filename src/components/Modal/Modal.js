@@ -8,7 +8,7 @@ const Modal = ({ onClose }) => {
           src="/Assets/about/close.svg"
           alt="close"
           onClick={onClose}
-          className={`absolute top-0 right-0 w-16 h-16 text-white text-lg cursor-pointer ${style.close}`}
+          className={`absolute top-0 right-0 w-12 h-12 lg:w-16 lg:h-16 text-white text-lg cursor-pointer ${style.close}`}
         />
 
         <video autoPlay loop className="w-4/5 xl:w-3/5" controls={false}>

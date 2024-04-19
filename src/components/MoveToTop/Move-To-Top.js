@@ -9,7 +9,7 @@ const MoveToTop = ({ isVisible }) => {
   };
   return (
     <div
-      className={`flex flex-row items-center justify-end animated-div ${
+      className={`hidden lg:flex flex-row items-center justify-end animated-div ${
         isVisible ? "isVisible" : ""
       }`}
     >

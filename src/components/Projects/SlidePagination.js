@@ -14,11 +14,11 @@ const SlidePagination = ({ currentSlide, handleNextClick }) => {
       className={`flex flex-row items-end lg:justify-start justify-between w-full lg:w-7/12 h-[50px] lg:h-[200px] ${style.pagination}`}
     >
       <div
-        className={`flex flex-row items-center justify-evenly m-4 w-5/12 lg:w-5/12 xl:w-3/12`}
+        className={`flex flex-row items-center justify-evenly m-4 w-7/12 sm:w-5/12 lg:w-5/12 xl:w-3/12`}
       >
         <p className={`text-white`}>0{currentSlide + 1}</p>
         <div
-          className={`${style.expandHorizontal2Parent} h-[1px] w-40 flex-row items-center justify-end`}
+          className={`${style.expandHorizontal2Parent} h-[1px] w-[80px] sm:w-40 flex-row items-center justify-end`}
           key={animationKey} // Ensure re-rendering when animationKey changes
         >
           <div className={`bg-white h-full ${style.expandHorizontal2}`}></div>

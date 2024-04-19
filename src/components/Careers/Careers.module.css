@@ -1,24 +1,53 @@
 .line {
-  width: 60px;
-  height: 4px;
   background-color: #1d78be;
 }
 
 @keyframes fadeIndown {
   from {
     opacity: 0;
-    transform: translateY(-100px); /* Move element 20px down */
+    transform: translateY(-100px);
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Move element to its original position */
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  animation-name: fadeIndown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes expandAnimation {
+  0% {
+    width: 40px;
+    transform: translateX(0);
+  }
+  100% {
+    width: 60px;
+    transform: translateX(10px);
   }
 }
 
-/* Apply the fadeInUp animation to elements with the fadeInUp class */
-.fadeInDown {
-  animation-name: fadeIndown;
-  animation-duration: 1s; /* Duration of the animation */
-  animation-timing-function: ease-in-out; /* Animation timing function */
-  animation-fill-mode: both; /* Apply animation styles before and after the animation */
+.lineExpand {
+  transition: transform 0.3s ease;
+  animation: expandAnimation 1s ease forwards;
+}
+
+@keyframes compressAnimation {
+  0% {
+    width: 60px;
+    transform: translateX(10px); /* Maintain the same horizontal translation */
+  }
+  100% {
+    width: 40px; /* Maintain full width */
+    transform: translateX(0); /* Start with no horizontal translation */
+  }
+}
+/* Apply the animation only when div is hovered */
+
+.lineCompress {
+  transition: transform 0.3s ease;
+  animation: compressAnimation 1s ease forwards;
 }
