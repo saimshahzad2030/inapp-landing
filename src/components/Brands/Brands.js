@@ -35,7 +35,7 @@ const Brands = ({ isVisible }) => {
           </p>
         </div>
         <div
-          className={`grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 w-full mt-16 gap-4 gap-y-20 ${
+          className={`grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 w-full mt-16 gap-y-8 sm:gap-4 sm:gap-y-20 ${
             isVisible ? style.fadeInUp : ""
           }`}
         >

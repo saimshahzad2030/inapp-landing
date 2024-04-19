@@ -7,9 +7,9 @@ const Clients = ({ projectsname, currentSlide }) => {
     >
       <div className={`w-full bg-gray-200 h-[2px]`}></div>
       <div
-        className={`flex flex-col sm:flex-row items-center justify-evenly lg:justify-start mt-2 sm:ml-20`}
+        className={`flex flex-col sm:flex-row items-center  w-full justify-evenly lg:justify-start mt-2  `}
       >
-        <p className={`text-lg text-gray-600 lg:text-lg ${style.fadeinLeft}`}>
+        <p className={`text-lg text-gray-600 lg:text-lg w-5/12 ${style.fadeinLeft}`}>
           Now proudly working with{" "}
         </p>
 

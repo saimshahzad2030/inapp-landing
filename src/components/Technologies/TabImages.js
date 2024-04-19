@@ -17,6 +17,7 @@ const TabImages = ({ tabs, activeIndex, isVisible }) => {
     >
       {tabs[activeIndex].images.map((image, index) => (
         <div
+        key={index}
           className={`flex flex-col items-center ${
             tabs[activeIndex].images.length !== 2 && index < 3
               ? "col-span-2 max-h-12 w-full object-contain"

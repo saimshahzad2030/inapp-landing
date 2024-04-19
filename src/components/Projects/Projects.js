@@ -16,7 +16,7 @@ const Projects = () => {
     sliderRef.current.slickNext();
   };
   return (
-    <div className="relative flex flex-col pb-0 sm:pb-0 md:pb-0 lg:pb-0">
+    <div className="relative flex flex-col pb-0 sm:pb-0 md:pb-0 lg:pb-20">
       <div className=" relative flex flex-col lg:flex-row items-start pt-16 z-10">
         <InAppText />
         <Carousel
@@ -26,12 +26,13 @@ const Projects = () => {
           currentSlide={currentSlide}
           setCurrentSlide={setCurrentSlide}
         />
+       
         <NextSlide
           images={projects}
           projectsname={projectsname}
           currentSlide={currentSlide}
           handleNextClick={handleNextClick}
-        />
+        /> 
         <SlideNumber currentSlide={currentSlide} />
       </div>
 

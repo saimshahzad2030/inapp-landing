@@ -42,17 +42,17 @@ export const expertise = [
 export const brands = [
   {
     name: "DiaGames",
-    classname: "w-20 sm:w-24 h-auto",
+    classname: "w-16 sm:w-24 h-auto",
     img: "/Assets/brands/diagame.png",
   },
   {
     name: "CooperSwitch",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/cooperswitch_logo.png",
   },
   {
     name: "AudioGrab",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/audiograb.png",
   },
   {
@@ -62,22 +62,22 @@ export const brands = [
   },
   {
     name: "Entice",
-    classname: "w-20 sm:w-30 h-auto",
+    classname: "w-16 sm:w-30 h-auto",
     img: "/Assets/brands/entice-white.svg",
   },
   {
     name: "DiscoverBlockhain",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/dicover-blockchain.png",
   },
   {
     name: "Zombie",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/zombie-white.svg",
   },
   {
     name: "Handoff",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/handoff-white.svg",
   },
   {
@@ -87,12 +87,12 @@ export const brands = [
   },
   {
     name: "Pushup",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/pushup.png",
   },
   {
     name: "Jackwarm",
-    classname: "w-20 sm:w-40 h-auto",
+    classname: "w-16 sm:w-40 h-auto",
     img: "/Assets/brands/jackwarmText.png",
   },
 ];

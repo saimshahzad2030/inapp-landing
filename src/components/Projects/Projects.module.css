@@ -1,0 +1,162 @@
+.line {
+    width: 60px;
+    height: 4px;
+    background-color: #1d78be;
+  }
+  .bg {
+    background-color: #1d78be;
+  }
+  .rectangularDiv {
+    overflow: hidden; /* Hide any overflow outside the rectangle */
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: slideFromRight 1s ease-in-out; /* Animation on component mount */
+  }
+  
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%); /* Start position: move to the right */
+    }
+    100% {
+      transform: translateX(0); /* End position: move to the original position */
+    }
+  }
+  
+  /* Define hover effect */
+  .rectangularImage:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+  }
+  .rectangularImage {
+    width: 100%; /* Make the image fill the entire container */
+    height: 100%; /* Make the image fill the entire container */
+    object-fit: cover; /* Cover the rectangular area */
+  
+    transition: transform 0.5s ease; /* Add a smooth transition */
+  }
+  .moveToTopDiv {
+    background-color: #1d78be;
+  }
+  
+  .pagination {
+    background-color: #20275c;
+  }
+  .imageCurtain {
+    background-color: rgba(0, 0, 0, 0.5);
+  } 
+  
+  @media screen and (max-width: 640px) {
+    .curtain {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  @keyframes expand {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 100%;
+    }
+    100% {
+      height: 0;
+    }
+  }
+  
+  .expand {
+    background-color: #1d78be;
+    overflow: hidden;
+    animation: expand 4s linear infinite;
+  }
+  @keyframes expandH {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  .expandHorizontal {
+    overflow: hidden;
+    animation: expandH 3s linear infinite;
+  }
+  
+  @keyframes expandH2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 30%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .expandHorizontal2Parent {
+    background-color: #20275c;
+  }
+  .expandHorizontal2 {
+    overflow: hidden;
+    animation: expandH2 3s linear;
+  }
+
+
+
+
+  .fadeinLeft {
+    overflow: hidden; /* Hide any overflow outside the rectangle */
+    animation: fadeinLeft 1s ease-in-out; /* Animation on component mount */
+  }
+  
+  @keyframes fadeinLeft {
+    0% {
+      transform: translateX(-100%); /* Start position: move to the right */
+    }
+    100% {
+      transform: translateX(0); /* End position: move to the original position */
+    }
+  }
+  
+
+
+  .fadeinRight {
+    overflow: hidden; /* Hide any overflow outside the rectangle */
+    animation: fadeInRight 1s ease-in-out; /* Animation on component mount */
+  }
+  
+  @keyframes fadeInRight {
+    0% {
+      transform: translateX(100%); /* Start position: move to the right */
+    }
+    100% {
+      transform: translateX(0); /* End position: move to the original position */
+    }
+  }
+  @keyframes fadeinDown {
+    0% {
+      transform: translateY(-100%); /* Start position: move to the right */
+    }
+    100% {
+      transform: translateX(0); /* End position: move to the original position */
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(100%); /* Start position: move to the right */
+    }
+    100% {
+      transform: translateX(0); /* End position: move to the original position */
+    }
+  }
+  
+
+  .fadeinDown{
+    overflow: hidden; /* Hide any overflow outside the rectangle */
+    animation: fadeinDown 1s ease-in-out; /* Animation on component mount */
+  }
+
+  .fadeinUp{
+    overflow: hidden; /* Hide any overflow outside the rectangle */
+    animation: fadeInUp 1s ease-in-out; /* Animation on component mount */
+  }
