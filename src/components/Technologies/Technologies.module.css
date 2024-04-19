@@ -1,0 +1,13 @@
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.imageAnimations {
+  animation: slideFromBottom 0.5s ease-in-out forwards;
+}

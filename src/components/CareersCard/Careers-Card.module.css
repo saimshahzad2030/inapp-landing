@@ -1,3 +1,26 @@
-.stroke {
-  height: 0.7px;
+.animated {
+  transition: width 1s ease; /* Transition width property */
+  width: 0%; /* Initial width */
+}
+
+.hovered {
+  width: 100%; /* Width expands to 100% when hovered */
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px); /* Move element 20px down */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move element to its original position */
+  }
+}
+
+/* Apply the fadeInUp animation to elements with the fadeInUp class */
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Animation timing function */
+  animation-fill-mode: both; /* Apply animation styles before and after the animation */
 }

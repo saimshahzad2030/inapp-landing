@@ -3,5 +3,22 @@
   height: 4px;
   background-color: #1d78be;
 }
-.span {
+
+@keyframes fadeIndown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px); /* Move element 20px down */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move element to its original position */
+  }
+}
+
+/* Apply the fadeInUp animation to elements with the fadeInUp class */
+.fadeInDown {
+  animation-name: fadeIndown;
+  animation-duration: 1s; /* Duration of the animation */
+  animation-timing-function: ease-in-out; /* Animation timing function */
+  animation-fill-mode: both; /* Apply animation styles before and after the animation */
 }

@@ -21,3 +21,12 @@
     text-wrap: balance;
   }
 }
+
+.animated-div {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.isVisible {
+  opacity: 1;
+}

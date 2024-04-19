@@ -1,20 +1,23 @@
 import React from "react";
 import CareersCard from "../CareersCard/Careers-Card";
 import style from "./Careers.module.css";
-const Careers = () => {
+import CareersRightDiv from "./CareersRightDiv";
+const Careers = ({ isVisible }) => {
   return (
     <div
-      className={`flex flex-col-reverse lg:flex-row items-start justify-evenly mt-40`}
+      className={`flex flex-col-reverse lg:flex-row items-start justify-evenly mt-40 animated-div ${
+        isVisible ? "isVisible" : ""
+      }`}
     >
       <div
         className={`flex flex-col items-start w-full lg:w-3/5 mt-16 lg:mt-0`}
       >
-        <CareersCard text={"UI/UX Designer"} />
-        <CareersCard text={"Frontend Developer"} />
-        <CareersCard text={"Backend Developer"} />
-        <CareersCard text={"Business Analyst"} />
+        <CareersCard text={"UI/UX Designer"} isVisible={isVisible} />
+        <CareersCard text={"Frontend Developer"} isVisible={isVisible} />
+        <CareersCard text={"Backend Developer"} isVisible={isVisible} />
+        <CareersCard text={"Business Analyst"} isVisible={isVisible} />
       </div>
-      <div
+      {/* <div
         className={`flex flex-col items-start px-12 lg:px-8 2xl:px-12 w-full lg:w-1/5`}
       >
         <div className={`flex flex-row items-center w-full ml-6 `}>
@@ -34,7 +37,8 @@ const Careers = () => {
             See open positions
           </span>
         </div>
-      </div>
+      </div> */}
+      <CareersRightDiv isVisible={isVisible} />
     </div>
   );
 };

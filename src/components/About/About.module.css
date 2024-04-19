@@ -17,3 +17,41 @@
 .modalOpen {
   overflow: hidden;
 }
+
+@keyframes diagonal-move {
+  0% {
+    transform: translate(50%, 50%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes diagonal-move2 {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.box1 {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.box2 {
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.animationbox1 {
+  animation-name: diagonal-move;
+  opacity: 1;
+}
+
+.animationbox2 {
+  animation-name: diagonal-move2;
+  opacity: 1;
+}

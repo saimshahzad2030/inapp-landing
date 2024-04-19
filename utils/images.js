@@ -69,3 +69,5 @@ export const projects = {
   project6: "/Assets/projects/Thumbnail-06.jpg",
   project7: "/Assets/projects/Thumbnail-07.jpg",
 };
+
+export const inapplogo = "/Assets/logo/logo.png";
